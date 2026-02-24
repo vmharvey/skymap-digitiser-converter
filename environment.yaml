@@ -1,0 +1,12 @@
+name: skymapconv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - astropy
+  - cartopy
+  - ipyfilechooser
+  - ipympl
+  - matplotlib
+  - notebook=7.3
+  - python
