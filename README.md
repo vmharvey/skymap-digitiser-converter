@@ -36,3 +36,8 @@ This could all be made much more clever, but it also works surprisingly well con
 ## Image credit
 
 The demo image "apjad843bf1_lr.jpg" is used under a [Creative Commons Attribution 4.0 license](http://creativecommons.org/licenses/by/4.0/) from Pierre Auger Collaboration (2024) "Large-scale Cosmic-ray Anisotropies with 19 yr of Data from the Pierre Auger Observatory", The Astrophysical Journal, Volume 976, Number 1. DOI: [10.3847/1538-4357/ad843b](https://dx.doi.org/10.3847/1538-4357/ad843b).
+
+## Further reading
+
+- https://cartopy.readthedocs.io/stable/reference/projections.html
+- https://matplotlib.org/stable/users/explain/artists/transforms_tutorial.html
