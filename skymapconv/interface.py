@@ -38,7 +38,7 @@ class Interface():
     UI_BUTTON_TEXT = "Extract data with current alignment"
 
     def __init__(self, filepath: str):
-        self.proj_list = ('Hammer', 'Aitoff', 'Sinusoidal')
+        self.proj_list = ('Hammer', 'Aitoff', 'Mollweide', 'Sinusoidal')
         self.frame_list = ('icrs', 'galactic')
         self.frame_ui_mapping = {'icrs': "Equatorial", 'galactic': "Galactic"}
 
@@ -138,14 +138,14 @@ class Interface():
         #     self.fig_control.add_subplot(gs)
         # self.fig_control.axes[0].set_title("hello", loc = "left")
 
-        gs_l = gs_f[2].subgridspec(3, 2, height_ratios = [4, 3, 0.5])
+        gs_l = gs_f[2].subgridspec(3, 2, height_ratios = [4, 4, 0.5])
         ax_input_tog   = self.fig_control.add_subplot(gs_l[0, :])
         ax_input_frame = self.fig_control.add_subplot(gs_l[1, 0])
         ax_input_proj  = self.fig_control.add_subplot(gs_l[1, 1])
         ax_input_clon  = self.fig_control.add_subplot(gs_l[2, :])
         ax_input_tog.set_title("Input configuration", loc = 'left')
 
-        gs_r = gs_f[3].subgridspec(4, 2, height_ratios = [3, 3, 0.5, 0.5])
+        gs_r = gs_f[3].subgridspec(4, 2, height_ratios = [3, 4, 0.5, 0.5])
         ax_output_draw  = self.fig_control.add_subplot(gs_r[0, :])
         ax_output_frame = self.fig_control.add_subplot(gs_r[1, 0])
         ax_output_proj  = self.fig_control.add_subplot(gs_r[1, 1])
