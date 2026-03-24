@@ -161,9 +161,7 @@ class Interface():
 
         axs_pos = {}
         self.sliders_pos = {}
-        for gs,key in zip(gs_t, ['xmid', 'ymid', 'width', 'height']):
-            if key == 'height': # leave height fixed at 1, we don't need to control it.
-                break
+        for gs,key in zip(gs_t, ['xmid', 'ymid', 'width']):
             if 'mid' in key:
                 label = f"{key[0].upper()}"
             else:

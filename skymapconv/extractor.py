@@ -107,8 +107,12 @@ class Extractor():
 
     def _axes_pos(self) -> tuple[float, float, float, float]:
         """Return a Matplotlib representation of the coordinate Axes position"""
-        # Always use 1 for the height because the fixed aspect ratio means it isn't important
-        height = 1.0
+        # Keep height constant because the fixed aspect ratio of each projection
+        # means it isn't particuarly important. We could use 1, but in some
+        # papers using equatorial coordinates the top and bottom of a
+        # projection can be cropped out, meaning we need to allow projection
+        # height to be greater than the canvas height. Use 2 for now
+        height = 2.0
         xlow = self.xmid - self.width/2
         ylow = self.ymid - height/2
         return (xlow, ylow, self.width, height)
